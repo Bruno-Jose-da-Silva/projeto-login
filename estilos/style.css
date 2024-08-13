@@ -31,16 +31,13 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden
-    ;
-
+    overflow: hidden;
     background-color: white;
     width: 250px;
-    height: 515px;
+    height: 457px;
     border-radius: 20px;
     box-shadow: 0px 0px  10px rgba(0, 0, 0, 0.447);
-
+    transform: translate(-50%, -50%);
     transition: width 1s, height 1s;
     transition-timing-function: ease;
 }
@@ -50,13 +47,11 @@ main {
     background: #5f2c82 url(../imagens/pexels-fwstudio-33348-172292.jpg) no-repeat;
     height: 150px;
     background-size: cover;
-
 }
 
 #login > #formulario {
     display: block;
     padding: 9px;
-
 }
 
 #formulario > h1 {
@@ -68,6 +63,7 @@ main {
 #formulario > p {
 
     font-size: 0.8em;
+    margin: 10px 0px;
 }
 
 form > div.campo {
@@ -78,13 +74,35 @@ form > div.campo {
     width: 100%;
     height: 40px;
     padding-bottom: 10px;
-    margin-bottom: 9px;
-    border-radius: 7px;
+    margin-bottom: 6px;
+    border-radius: 8px;
 
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 4px;
+}
+
+div.campo > input {
+    background-color: aqua;
+    font-size: 1em;
+    width:calc(99% - 45px) ;
+    height:119% ;
+    border: 0px;
+    border-radius: 9px;
+    padding: 2px;
+    transform: translateY(-9px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
@@ -131,6 +149,5 @@ form > a.botão:hover {
 }
 
 form > a.botão >span {
-    font-size: 1.2em;
-    
+    font-size: 1.2em;    
 }
